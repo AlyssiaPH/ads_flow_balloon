@@ -10,7 +10,9 @@ const express = require('express');
 const gtts = require("gtts");
 const app = express();
 
-app.get('/', function(req, res) {
+app.use(express.static('public'));
+
+app.get('/', function (req, res) {
     res.sendFile(path.join(__dirname, '/index.html'));
 
 
@@ -19,12 +21,12 @@ app.get('/', function(req, res) {
 
 
 
-    app.get('/hear', function (req, res) {
-        const gttsTe = new gtts('Venez à la Coding Factory !', 'fr');
-        gttsTe.stream().pipe(res);
-    });
+app.get('/hear', function (req, res) {
+    const gttsTe = new gtts('Venez à la Coding Factory !', 'fr');
+    gttsTe.stream().pipe(res);
+});
 
-        console.log('Open url to hear Hallelujah http://localhost:3000/hear');
+console.log('Open url to hear Hallelujah http://localhost:3000/hear');
 
 
 app.listen(port);

@@ -1,0 +1,52 @@
+body {
+    background-color: #2f2f2f;
+}
+
+/* HEADER */
+
+.img {
+    width: 10;
+    height: auto;
+}
+
+.header {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    color: whitesmoke;
+    background-color: #191919;
+    margin: auto;
+}
+
+.nameTxt {
+    text-align: left;
+}
+
+.divImg {
+    text-align: end;
+}
+
+/* FORM */
+
+.form {
+    margin-top: 8% !important;
+    width: 90%;
+    margin: auto;
+}
+
+.sendBtn {
+    margin-top: 2%;
+}
+
+/* DIRECTION */
+
+.direction {
+    margin-top: 2%;
+}
+
+.icon {
+    color: rgb(255, 213, 0);
+    font-size: 150px;
+    cursor: pointer;
+}
